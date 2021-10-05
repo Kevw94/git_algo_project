@@ -1,8 +1,12 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
+    public static int nombreOperation =0;
+
+    Random random = new Random();
 
 
 public static void tri_insertion (int T[]){
@@ -16,16 +20,18 @@ public static void tri_insertion (int T[]){
             T[j+1] = T[j];
             j--;
             System.out.println(Arrays.toString(T) + "w");
+            nombreOperation++;
         }
         T[j+1] =  x;
         System.out.println(Arrays.toString(T));
+        nombreOperation++;
     }
-
 }
     public static void main(String[] args) {
-    int T[] = {6,5,3,1,2,8,7,4};
-    tri_insertion(T);
 
-    //System.out.println(Arrays.toString(T));
+    int T[] =new Random().ints(10,0,10).toArray();
+
+    tri_insertion(T);
+        System.out.println(nombreOperation);
     }
 }
