@@ -1,0 +1,22 @@
+Arguments :
+
+tableau T a trier
+
+Méthode :
+
+définir une variable taille qui est la taille du tableau
+
+pour i =1 avec i < taille et i = i + 1
+
+        x = T[i]
+        j = i -1
+
+tant que j >= 0 et t[j] > x
+        t[j] = x
+        j = j -1
+
+T[j+1] = x
+
+
+
+
