@@ -121,7 +121,4 @@ public class Main {
         int y[] ={2,78,9,0,94,6};
         TriBulle(y);
     }
-
-
-
 }
