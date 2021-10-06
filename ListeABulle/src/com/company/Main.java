@@ -8,9 +8,11 @@ import java.util.StringJoiner;
 public class Main {
     public static float nombreOperation;
 
+    public static float nombreOperation1;
+
     Random random = new Random();
 
-    public static void stats (int min, int max, int step, int nbr) {
+    public static void statsOpti (int min, int max, int step, int nbr) {
         int i = 1;
         nombreOperation =0;
         for (i = 1; i <= nbr ; i++){
@@ -19,10 +21,26 @@ public class Main {
         }
         if (i>nbr && min<max){
             System.out.println(min +" "+ nombreOperation/nbr);
-            stats((min+step),max,step,nbr);
+            statsOpti((min+step),max,step,nbr);
         }
         else {
             System.out.println(min +" "+ nombreOperation/nbr);
+        }
+    }
+
+    public static void stats (int min, int max, int step, int nbr) {
+        int i = 1;
+        nombreOperation1 =0;
+        for (i = 1; i <= nbr ; i++){
+            int tab[] =new Random().ints(min).toArray();
+            TriBulle(tab);
+        }
+        if (i>nbr && min<max){
+            System.out.println(min +" "+ nombreOperation1/nbr);
+            stats((min+step),max,step,nbr);
+        }
+        else {
+            System.out.println(min +" "+ nombreOperation1/nbr);
         }
     }
     public static void TriBulle(int tab[]){
@@ -32,13 +50,16 @@ public class Main {
 
         for (int i = 0; i < longueur-1; i++) {
             for (int k = 0; k < longueur-1; k++) {
+                nombreOperation1++;
                 if (tab[k]>tab[k+1]){
+                    nombreOperation1++;
                     comparaison+=1;
                     int tmp = tab[k];
                     tab[k] = tab[k+1];
                     tab[k+1] = tmp;
                     affectation+=3;
                 }else {
+                    nombreOperation1++;
                     continue;
                 }
             }
@@ -94,7 +115,9 @@ public class Main {
     }
     public static void main(String[] args) {
 
+        statsOpti(10,20,5,10);
         stats(10,20,5,10);
+
         int y[] ={2,78,9,0,94,6};
         TriBulle(y);
     }
