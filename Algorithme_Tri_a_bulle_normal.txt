@@ -1,0 +1,16 @@
+
+Algo:Tri a bulle normal
+
+Definir un tableau
+longueur = longueur du tableau
+Definir index a 0
+next = index+1 (terme suivant de index)
+
+Parcourir le tableau en passant par chaque Element longueur fois:
+	
+		Si index est superieur a next :
+			Echanger index et next  
+		Fin
+		
+
+Retourner le tableau trié  	

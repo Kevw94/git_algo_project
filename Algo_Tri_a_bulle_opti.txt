@@ -1,0 +1,15 @@
+Algo:Tri a bulle optimise
+
+Definir un tableau  
+Definir index a 0
+next = index+1
+
+Parcourir chaque element du tableau:
+	Répéter jusqu'au dernier element du tableau:
+		Si index est supérieur a next :
+			Répéter jusqu'a ce que index soit inférieur a next (on décrémenter index)
+			Echanger index et next  
+		Fin
+  index = index +1		
+
+Retourner le tableau trié  	
