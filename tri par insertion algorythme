@@ -17,6 +17,12 @@ tant que j >= 0 et t[j] > x
 
 T[j+1] = x
 
+3.b :
+
+Dans le pire des cas qui est un tableau trié a l'envers donc {8,7,6,5,4,3,2,1}, l'algorythme de tri par insertion réalise
+35 opérations.
+Dans le meilleur des cas qui est un tableau deja trié donc {1,2,3,4,5,6,7,8}, l'algorythme de tri par insertion réalise 7
+opérations.
 
 
 
