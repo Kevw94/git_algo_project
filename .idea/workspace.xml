@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5026dd94-e2c7-4ac0-b9be-5e53b0085275" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/tri par insertion/com/company/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/git_algo_project/com/company/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1z8MmsQGxSEV7NIunoyaK5D1xKT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,6 +56,7 @@
       <workItem from="1633525427588" duration="166000" />
       <workItem from="1633525673668" duration="6000" />
       <workItem from="1633525694584" duration="4000" />
+      <workItem from="1633593735387" duration="10000" />
     </task>
     <servers />
   </component>
