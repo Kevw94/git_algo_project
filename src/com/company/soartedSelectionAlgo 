@@ -1,0 +1,19 @@
+
+function soartedSelection
+
+
+print an array with values
+browse array from index 0 to max index value -1
+
+print the values assigned for each index value in a variable like "attributedValues" to get in memory of values
+
+browse the same array from the index 1 to max value -2
+
+compare the values for each value and check if the second browse < to first browse for each value
+
+
+if it is the case, add the inferior values to the variable same as the first attribution to modify this
+
+create variable to get the new array listed with each values replaced from the minimum to the maximum for each index
+
+
