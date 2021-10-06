@@ -36,14 +36,14 @@ public static void tri_insertion (int T[]){
     for (int i =1; i< taille; i++){
         x = T[i];
         j = i-1;
-        affectation++;
-        nombreOperation++;
+        affectation = affectation +2;
+        nombreOperation = nombreOperation +2;
         while (j>=0 && T[j]> x){
             T[j+1] = T[j];
             j--;
-            affectation++;
+            affectation = affectation +2;
             comparaison++;
-            nombreOperation = nombreOperation +2;
+            nombreOperation = nombreOperation +3;
         }
         T[j+1] =  x;
         affectation++;
