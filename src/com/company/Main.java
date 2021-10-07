@@ -47,10 +47,14 @@ public class Main {
                  soartedSelection(array);
              }
              if (i > nbr && min < max) {
-                 System.out.println(" Nombre d'opérations dans le pire des cas pour l'exemple  " + min*min*nbr + " " +  " Nombre d'opérations moyennes    "  + nbr * (min*(min-1))/2);
+                 System.out.println(" Nombre d'opérations dans le pire des cas pour l'exemple  " + min*min*nbr + " "
+                         +  " Nombre d'opérations moyennes    "  + nbr * (min*(min-1))/2);
+                 System.out.println("Nombre d'opérations dans le pire des cas pour un tableau de " + min + " cases =  "
+                         + min*min  +  "Nombre d'opérations moyennes  pour un tableau de " + min + " cases = " + (min*(min-1))/2);
                  stats((min + step), max, step, nbr);
              } else {
                  System.out.println(" Nombre d'opérations dans le pire des cas pour l'exemple  " + min*min*nbr + " " +  " Nombre d'opérations moyennes   "  + nbr * (min*(min-1))/2);
+                 System.out.println("Nombre d'opérations dans le pire des cas pour un tableau de " + min + " cases =  " + min*min  +  "Nombre d'opérations moyennes  pour un tableau de " + min + " cases = " + (min*(min-1))/2);
              }
          }
 
@@ -102,3 +106,5 @@ public class Main {
         // write your code here
     }
 }
+
+

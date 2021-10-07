@@ -17,3 +17,13 @@ if it is the case, add the inferior values to the variable same as the first att
 create variable to get the new array listed with each values replaced from the minimum to the maximum for each index
 
 
+Définir un tableau
+
+boucle qui va passer dans le tableau et récupérer la valeur minimale
+
+boucle qui va traverser le tableau en comparant les valeurs et inclure la valeur min si < la valeur comparée
+
+un troisième tableau va ressortir avec les valeurs ordonnées
+
+Imprimer pour afficher le tableau ordonné en le parcourant
+
