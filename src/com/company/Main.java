@@ -5,8 +5,8 @@ import java.util.Random;
 
 public class Main {
     public static float nombreOperation=0;
-    public static int comparaison =0;
-    public static int affectation = 0;
+    public static float comparaison =0;
+    public static float affectation = 0;
 
     //Random random = new Random();
 
@@ -37,7 +37,8 @@ public class Main {
             x = T[i];
             j = i-1;
             affectation = affectation +2;
-            nombreOperation = nombreOperation +2;
+            nombreOperation = nombreOperation +3;
+            comparaison++;
             while (j>=0 && T[j]> x){
                 T[j+1] = T[j];
                 j--;
@@ -54,11 +55,12 @@ public class Main {
     public static void main(String[] args) {
 
         //int T[] =new Random().ints(10,0,10).toArray();
-        int T[] = {10,9,8,7,6,5,4,3,2,1};
-        tri_insertion(T);
+        //int T[] = {10,9,8,7,6,5,4,3,2,1};
+        //tri_insertion(T);
+        //int T[] = {1,2,3,4,5,6,7,8};
+        //tri_insertion(T);
         //System.out.println(nombreOperation);
-        //stats(10,20,5,10);
-        System.out.println(nombreOperation);
+        stats(10,20,5,10000);
 
     }
 }
