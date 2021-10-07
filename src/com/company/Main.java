@@ -52,7 +52,7 @@ public class Main {
             for (int k = 0; k < longueur-1; k++) {
                 nombreOperation1++;
                 if (tab[k]>tab[k+1]){
-                    nombreOperation1++;
+                    nombreOperation1 = nombreOperation1 +4;
                     comparaison+=1;
                     int tmp = tab[k];
                     tab[k] = tab[k+1];
@@ -78,7 +78,7 @@ public class Main {
         while (i < longueur-1){
 
             if (tab[i]>tab[i+1]){
-                nombreOperation++;
+                nombreOperation = nombreOperation +4;
 
                 compteur+=1;
                 int tmp = tab[i];
@@ -90,7 +90,7 @@ public class Main {
                     compteur+=1;
                     v=i;
                     i=v+1;
-                    nombreOperation++;
+                    nombreOperation= nombreOperation + 3;
                     if (v>0){
                         tmp = tab[v];
                         tab[v]=tab[v-1];
@@ -98,7 +98,7 @@ public class Main {
                         v = i-1;
                         i=v-1;
                         echange +=3;
-                        nombreOperation++;
+                        nombreOperation = nombreOperation+ 6;
                     }else{
                         nombreOperation++;
                         i+=1;
@@ -108,6 +108,7 @@ public class Main {
 
             }else{
                 compteur+=1;
+                nombreOperation++;
                 i+=1;
             }
         }
@@ -115,8 +116,8 @@ public class Main {
     }
     public static void main(String[] args) {
 
-        statsOpti(10,20,5,10);
-        stats(10,20,5,10);
+        statsOpti(10,20,5,10000);
+        stats(10,20,5,10000);
 
         int y[] ={2,78,9,0,94,6};
         TriBulle(y);
