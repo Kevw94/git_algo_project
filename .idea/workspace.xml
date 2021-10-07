@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="5026dd94-e2c7-4ac0-b9be-5e53b0085275" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/out/production/git_algo_project/com/company/Main.class" afterDir="false" />
     </list>
+=======
+    <list default="true" id="5026dd94-e2c7-4ac0-b9be-5e53b0085275" name="Changes" comment="" />
+>>>>>>> triSelection
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
